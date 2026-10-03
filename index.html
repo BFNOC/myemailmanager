@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>myemailmanager</title>
+<style>
+  body { max-width: 42rem; margin: 3rem auto; padding: 0 1.25rem;
+         font: 16px/1.65 system-ui, -apple-system, "Segoe UI", sans-serif;
+         color: #1f2328; }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  .sub { color: #59636e; margin-top: 0; }
+  h2 { font-size: 1.1rem; margin-top: 2rem; }
+  code { background: #f3f4f6; padding: .1rem .3rem; border-radius: 3px;
+         font-size: .9em; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #d1d9e0;
+           color: #59636e; font-size: .9rem; }
+  a { color: #0969da; }
+</style>
+</head>
+<body>
+
+<h1>myemailmanager</h1>
+<p class="sub">A personal command-line mail tool.</p>
+
+<h2>What it does</h2>
+<p>
+  myemailmanager reads and sends mail from its own author's Gmail mailbox over
+  IMAP and SMTP. It runs locally on the author's machine as a command-line
+  program. It is not offered as a hosted service and has no users other than
+  the author.
+</p>
+
+<h2>Google account access</h2>
+<p>
+  The tool authenticates with Google using OAuth 2.0. It requests the
+  <code>https://mail.google.com/</code> scope, which is what IMAP and SMTP
+  access to a Gmail mailbox requires. Access is granted explicitly by the
+  account owner on Google's consent screen and can be withdrawn at any time
+  from the
+  <a href="https://myaccount.google.com/permissions">Google account
+  permissions page</a>.
+</p>
+
+<h2>Where data goes</h2>
+<p>
+  Nowhere. Messages and OAuth tokens stay on the local machine running the
+  tool. No data is sent to the author, to a server, or to any third party.
+</p>
+
+<footer>
+  <a href="privacy.html">Privacy Policy</a>
+</footer>
+
+</body>
+</html>
